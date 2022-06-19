@@ -176,7 +176,6 @@ body {
 
 .texts .services-schedule .services:hover {
 	opacity: 0.5;
-	font-size: 15px;
 	font-weight: 400;
 }
 
@@ -701,4 +700,78 @@ body {
 	font-weight: 700;
 	color: #0A0909;
 	opacity: 0.3;
+}
+
+/*Programs page styling*/
+
+/*Schedule Styling*/
+
+.top > div {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.top > div .texts {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+}
+
+.top > div .texts > h2 {
+	font-size: 75px;
+	font-weight: 700;
+	color: #262626;
+}
+
+.top > div .texts > h3 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #262626;
+}
+
+.top > div .texts > span {
+	font-size: 14px;
+	font-weight: 400;
+	color: #262626;
+	opacity: 0.5;
+}
+
+.similar-programs .texts > span {
+	font-size: 20px !important;
+}
+
+.top > div .texts > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	text-decoration: none;
+	width: 220px;
+	height: 50px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #F8F7FD;
+	background: #8850FF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 30px;
+}
+
+.top > div .texts > a > img {
+	transform: translateY(5px);
+}
+
+.top > div .texts > a:hover {
+	opacity: 0.5;
+	font-weight: 400;
+}
+
+.top > div .images {
+	flex-basis: 50%;
+}
+
+.top > div .images > img {
+	width: 100%;
 }
