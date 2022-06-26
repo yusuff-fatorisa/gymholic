@@ -1,0 +1,415 @@
+/*Pre-Requisites*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*Body Styling*/
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+/*Container Styling*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	min-height: 100vh;
+	width: 100%;
+	background-color: #f8f7fd;
+}
+
+.container .top {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	width: 90%;
+	padding-top: 50px;
+}
+
+/*Top Styling*/
+
+.top .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+/*Header Styling*/
+
+
+.header .logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.header .nav-and-login {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+
+.header .nav-and-login ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+	list-style-type: none;
+}
+
+.header .nav-and-login > a {
+	color: #9a6bff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 10px 15px;
+	border: 1.5px solid #9a6bff;
+	border-radius: 40px;
+}
+
+.header .nav-and-login ul a {
+	text-decoration: none;
+	color: #9a6bff;
+	font-size: 14px;
+	font-weight: 700;
+	opacity: 0.5;
+}
+
+.header .nav-and-login ul a:hover {
+	padding-bottom: 15px;
+	color: #844EF9;
+	opacity: 1;
+	border-bottom: solid 2px #844EF9;
+
+}
+
+.top > div {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.top > div .texts {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	padding-left: 50px;
+}
+
+.top > div .texts > h2 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #262626;
+}
+
+.top .similar-programs .texts > h3 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #262626;
+}
+
+.top > div .texts > span {
+	font-size: 14px;
+	font-weight: 400;
+	color: #262626;
+	opacity: 0.5;
+}
+
+.top .similar-programs .texts > span {
+	font-size: 20px;
+}
+
+.top > div .texts > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	text-decoration: none;
+	width: 220px;
+	height: 50px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #F8F7FD;
+	background: #8850FF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 30px;
+}
+
+.top > div .texts > a > img {
+	transform: translateY(5px);
+}
+
+.top > div .texts > a:hover {
+	opacity: 0.5;
+	font-weight: 400;
+}
+
+.top > div .images {
+	flex-basis: 50%;
+}
+
+.top > div .images > img {
+	width: 100%;
+}
+
+/*Footer Styling*/
+
+.container .footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	height: 250px;
+	padding-bottom: 100px;
+}
+
+.footer .general {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
+	height: 100%;
+}
+
+.general .logo {
+	display: flex;
+	align-items: center;
+	gap: 7.5px;
+}
+
+.general .logo > img {
+	width: 30px;
+	height: 30px;
+}
+
+.general .logo > h1 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #0A0909;
+}
+
+.general > span {
+	font-size: 14px;
+	font-weight: 700;
+	color: #0A0909;
+	opacity: 0.3;
+}
+
+.general .socials {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.general .socials > a {
+	text-decoration: none;
+}
+
+.general .socials > a:hover {
+	width: 23.5px;
+}
+
+.footer .alikes {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	height: 100%;
+}
+
+.footer .alikes > h2, .footer .more > h2 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+}
+
+.footer .alikes ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	list-style-type: none;
+}
+
+
+.footer .alikes ul a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+	color: #0A0909;
+	opacity: 0.3;
+}
+
+.footer .alikes ul a:hover {
+	font-size: 16px;
+	font-weight: 400;
+	opacity: 1;
+}
+
+.footer .more {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	height: 100%;
+}
+
+.footer .more > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	background: #fff;
+	border: 1px solid #055;
+	border-radius: 40px;
+	padding: 2px;
+}
+
+.footer .more > div > input {
+	height: 42px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding-block: 1px;
+    padding-inline-start: 10px;
+}
+
+.footer .more > span {
+	font-size: 14px;
+	font-weight: 700;
+	color: #0A0909;
+	opacity: 0.3;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 1300px) {
+
+	.top .muscle-building .texts > h3 {
+		font-size: 44px;
+	}
+
+	.top .similar-programs .texts > span {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+
+	.top .aerobics .texts > h3, .top .fat-loss .texts > h3 {
+		font-size: 41px;
+	}
+
+	.top .muscle-building .texts > h3 {
+		font-size: 38.5px;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+
+	.top > div .texts > h2 {
+		font-size: 47px;
+	}
+
+	.top > div .texts > span > br {
+		display: none;
+	}
+
+	.top .zumba .texts > h3 {
+		font-size: 39px;
+	}
+
+	.top .aerobics .texts > h3 {
+		font-size: 31px;
+	}
+
+	.top .cardio .texts > h3 {
+		font-size: 40px;
+	}
+
+	.top .fat-loss .texts > h3 {
+		font-size: 32px;
+	}
+
+	.top .muscle-building .texts > h3 {
+		font-size: 29px;
+	}
+
+	.top .similar-programs .texts > span {
+		font-size: 15px;
+	}
+
+	.general > span, .footer .alikes ul a, .footer .more > span {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.header .nav-and-login {
+		gap: 45px;
+	}
+
+	.header .nav-and-login ul {
+		gap: 25px;
+	}
+
+	.top > div .texts > h2 {
+		font-size: 40px;
+	}
+
+	.top > div .texts > span {
+		font-size: 12.5px;
+	}
+
+	.top .zumba .texts > h3 {
+		font-size: 33px;
+	}
+
+	.top .aerobics .texts > h3 {
+		font-size: 26.5px;
+	}
+
+	.top .cardio .texts > h3 {
+		font-size: 34px;
+	}
+
+	.top .fat-loss .texts > h3 {
+		font-size: 27px;
+	}
+
+	.top .muscle-building .texts > h3 {
+		font-size: 25px;
+	}
+
+	.top .similar-programs .texts > span {
+		font-size: 14px;
+	}
+
+	.container .footer {
+		justify-content: center;
+		gap: 25px;
+	}
+
+	.general > span > br, .footer .more > span > br {
+		display: none;
+	}
+
+	.general > span, .footer .alikes ul a, .footer .more > span {
+		font-size: 12px;
+	}
+}

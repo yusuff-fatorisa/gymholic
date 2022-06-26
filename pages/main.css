@@ -117,11 +117,10 @@ body {
 	flex-basis: 50%;
 }
 
-.hero .texts > h1 {
+.hero .texts h1 {
 	color: #0A0909;
 	font-weight: 700;
 	font-size: 75px;
-	/*line-height: 86px;*/
 }
 
 .hero .texts > h1 > div {
@@ -130,16 +129,9 @@ body {
 	gap: 10px;
 }
 
-.hero .texts > h1 > div > h1 {
-	font-size: 75px;
-}
-
 .hero .texts .hero-ball {
 	width: 60px;
 	height: 60px;
-	/*position: absolute;*/
-	/*top: 35%;
-	left: 55%;*/
 }
 
 .hero .texts > p {
@@ -154,7 +146,6 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 30px;
-	position: relative;
 }
 
 .texts .services-schedule .services { 
@@ -205,12 +196,6 @@ body {
 	width: 100%;
 }
 
-.hero .texts .services-schedule > img {
-	/*position: absolute;
-	top: -100%;
-	right: 25%;*/
-}
-
 .texts .vector-images {
 	display: flex;
 	justify-content: space-between;
@@ -218,12 +203,15 @@ body {
 }
 
 .hero .images {
-	flex-grow: 1;
-	background: url("./images/Ellipse 10.svg");
+	flex-basis: 50%;
+}
+
+.hero .images > img {
+	width: 100%;
 }
 
 
-/*Featyred Programs Styling*/
+/*Featured Programs Styling*/
 
 .top .featured-programs {
 	display: flex;
@@ -280,7 +268,7 @@ body {
 .featured-programs .programs > div > div {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	height: 100px;
 }
 
@@ -320,15 +308,20 @@ body {
 	flex-basis: 50%;
 }
 
+.accessibility .images > img {
+	width: 100%;
+}
+
 .accessibility .texts {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 20px;
-	flex-grow: 1;
+	flex-basis: 50%;
+	padding-inline-start: 100px;
 }
 
-.accessibility .texts > h2 {
+.top .accessibility .texts > h2 {
 	font-size: 45px;
 	font-weight: 700;
 	color: #0A0909;
@@ -381,7 +374,7 @@ body {
 	width: 100%;
 }
 
-.benefits .texts {
+.top .benefits .texts {
 	display: flex;
 	flex-basis: 50%;
 	flex-direction: column;
@@ -390,7 +383,7 @@ body {
 	gap: 10px;
 }
 
-.benefits .texts > h3 {
+.top .benefits .texts > h3 {
 	color: #262626;
 	font-size: 48px;
 	font-weight: 700;
@@ -432,6 +425,10 @@ body {
 	flex-basis: 50%;
 }
 
+.benefits .images > img {
+	width: 100%;
+}
+
 /*Exercise Styling*/
 
 .top .exercises {
@@ -445,7 +442,7 @@ body {
 
 .exercises .intro {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 }
@@ -529,8 +526,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	/*align-items: center;*/
 	gap: 25px;
+	padding-inline-start: 50px;
 }
 
 .testimonials .texts > h2 {
@@ -550,10 +548,10 @@ body {
 	letter-spacing: 1.25px;
 }
 
-.testimonials .texts .testimony > article {
+.testimonials .texts .testimony > q {
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 2;
+	line-height: 1.5;
 	color: #F7F2F2;
 	opacity: 0.7;
 }
@@ -689,10 +687,22 @@ body {
 
 .footer .more > div {
 	display: flex;
-	justify-content: flex-end;
-	border: 1px solid #000;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	background: #fff;
+	border: 1px solid #055;
 	border-radius: 40px;
 	padding: 2px;
+}
+
+.footer .more > div > input {
+	height: 42px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding-block: 1px;
+    padding-inline-start: 10px;
 }
 
 .footer .more > span {
@@ -702,76 +712,256 @@ body {
 	opacity: 0.3;
 }
 
-/*Programs page styling*/
+/*Media Query*/
 
-/*Schedule Styling*/
+@media screen and (max-width: 1300px) {
 
-.top > div {
-	display: flex;
-	align-items: center;
-	width: 100%;
+	.hero .texts h1 {
+		font-size: 50px;
+	}
+
+	.hero .texts .hero-ball {
+		width: 40px;
+		height: 40px;
+	}
+
+	.exercises .intro > h2 {
+		font-size: 45px;
+	}
+
+	.exercises .intro > p {
+		font-size: 18px;
+	}
+
+	.testimonials .texts .testimony > q {
+		font-size: 15px;
+	}
 }
 
-.top > div .texts {
-	flex-basis: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 30px;
+@media screen and (max-width: 1150px) {
+
+	.featured-programs .programs {
+		gap: 150px;
+	}
+
+	.featured-programs .programs > div:nth-of-type(1) {
+		padding-left: 10px;
+		gap: 15px;
+	}
+
+	.featured-programs .programs > div:nth-of-type(2) {
+		padding-right: 10px;
+		gap: 15px;
+	}
+
+	.featured-programs .programs > div > div > p {
+		font-size: 14px;
+	}
+
+	.top .accessibility .texts > h2 {
+		font-size: 40px;
+	}
+
+	.accessibility .texts > p > br {
+		display: none;
+	}
+
+	.top .benefits .texts > h3 {
+		font-size: 42px;
+	}
+
+	.exercises .intro > h2 {
+		font-size: 40px;
+	}
+
+	.exercises .intro > p {
+		font-size: 15px;
+	}
+
+	.exercises .details {
+		gap: 20px;
+	}
+
+	.exercises .details > div > div {
+		gap: 10px;
+	}
+
+	.exercises .details > div > div > div > span {
+		font-size: 12px;
+		line-height: 1.3;
+	}
+
+	.testimonials .texts > h2 {
+		font-size: 40px;
+	}
+
+	.testimonials .texts .testimony > q {
+		font-size: 13.5px;
+	}
 }
 
-.top > div .texts > h2 {
-	font-size: 75px;
-	font-weight: 700;
-	color: #262626;
+@media screen and (max-width: 1020px) {
+
+	.hero .texts h1{
+		font-size: 47px;
+	}
+
+	.hero .texts > p > br {
+		display: none;
+	}
+
+	.hero .texts .services-schedule {
+		gap: 10px;
+	}
+
+	.texts .services-schedule > div > p {
+		font-size: 11px;
+	}
+
+	.featured-programs .intro > h2 {
+		font-size: 32px;
+	}
+
+	.featured-programs > p {
+		font-size: 16px;
+	}
+
+	.featured-programs .programs {
+		gap: 90px;
+	}
+
+	.featured-programs .programs > div > img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.top .accessibility .texts > h2 {
+		font-size: 32px;
+	}
+
+	.accessibility .texts > p {
+		font-size: 12px;
+	}
+
+	.top .benefits .texts > h3 {
+		font-size: 39px;
+	}
+
+	.exercises .intro > h2 {
+		font-size: 30px;
+	}
+
+	.exercises .intro > p {
+		font-size: 12px;
+	}
+
+	.exercises .details > div > div > img {
+		width: 45px;
+		height: 75px;
+	}
+
+	.exercises .details > div > div > div {
+		gap: 10px;
+	}
+
+	.exercises .details > div > div > div > h4 {
+		font-size: 15px;
+	}
+
+	.exercises .details > div > div > div > span > br {
+		display: none;
+	}
+
+	.testimonials .texts > h2 {
+		line-height: unset;
+		font-size: 36px;
+	}
+
+	.testimonials .texts .testimony > q {
+		font-size: 12.5px;
+	}
+
+	.testimonials .texts > h2 > br, .testimonials .texts .testimony > q > br {
+		display: none;
+	}
+
+	.general > span, .footer .alikes ul a, .footer .more > span {
+		font-size: 12px;
+	}
 }
 
-.top > div .texts > h3 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #262626;
+@media screen and (max-width: 800px) {
+	.header .nav-and-login {
+		gap: 45px;
+	}
+
+	.header .nav-and-login ul {
+		gap: 25px;
+	}
+
+	.hero .texts h1 {
+		font-size: 40px;
+	}
+
+	.texts .services-schedule .services {
+		width: 160px;
+	}
+
+	.texts .services-schedule > img {
+		width: 30px;
+	}
+
+	.featured-programs .programs {
+		gap: 50px;
+	}
+
+	.featured-programs .programs > div > div > p > br {
+		display: none;
+	}
+
+	.top .accessibility .texts > h2 {
+		font-size: 28px;
+	}
+
+	.exercises .intro {
+		gap: 50px;
+	}
+
+	.exercises .intro > h2 {
+		font-size: 25px;
+	}
+
+	.exercises .intro > h2 > br, .exercises .intro > p > br {
+		display: none;
+	}
+
+	.exercises .details > div > div > div > h4 {
+		font-size: 13px;
+	}
+
+	.testimonials .texts .testimony {
+		padding-left: 20px;
+	}
+
+	.testimonials .texts > h2 {
+		font-size: 30px;
+	}
+
+	.testimonials .texts .testimony > q {
+		font-size: 11.5px;
+	}
+
+	.container .footer {
+		justify-content: center;
+		gap: 25px;
+	}
+
+	.general > span > br, .footer .more > span > br {
+		display: none;
+	}
+
+	.general > span, .footer .alikes ul a, .footer .more > span {
+		font-size: 12px;
+	}
 }
 
-.top > div .texts > span {
-	font-size: 14px;
-	font-weight: 400;
-	color: #262626;
-	opacity: 0.5;
-}
-
-.similar-programs .texts > span {
-	font-size: 20px !important;
-}
-
-.top > div .texts > a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 25px;
-	text-decoration: none;
-	width: 220px;
-	height: 50px;
-	font-size: 14px;
-	font-weight: 700;
-	color: #F8F7FD;
-	background: #8850FF;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-	border-radius: 30px;
-}
-
-.top > div .texts > a > img {
-	transform: translateY(5px);
-}
-
-.top > div .texts > a:hover {
-	opacity: 0.5;
-	font-weight: 400;
-}
-
-.top > div .images {
-	flex-basis: 50%;
-}
-
-.top > div .images > img {
-	width: 100%;
-}
